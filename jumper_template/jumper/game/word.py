@@ -7,7 +7,6 @@ class Word:
     def get_word(self):
         self.rand_word = random.choice(self.words)
         self.guessed = []
-        print(self.rand_word)
         for char in self.rand_word:
             self.guessed.append('_')
 
@@ -24,6 +23,5 @@ class Word:
                 self.guessed[x] = guess
                 success = True
             x += 1
-        print((self.guessed))
         return success
 
