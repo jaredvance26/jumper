@@ -19,14 +19,16 @@ class Director:
         while self.keep_playing:
             self.get_inputs()
             self.get_updates()
-            self.get_output()
+            self.get_outputs()
     
     def get_inputs(self):
         pass
 
     def get_updates(self):
-        pass
+        guess = self.console.write_message('Guess a letter [a-z]: ')
+        self.word.compare_letter(guess)
 
-    def get_output(self):
+
+    def get_outputs(self):
         pass
 
