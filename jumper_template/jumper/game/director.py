@@ -27,9 +27,10 @@ class Director:
 
     def get_updates(self):
         guess = self.console.write_message('Guess a letter [a-z]: ')
-        self.word.compare_letter(guess)
+        success = self.word.compare_letter(guess)
+        self.jumper.life(success)
 
 
     def get_outputs(self):
-        pass
+        self.jumper.display()
 
