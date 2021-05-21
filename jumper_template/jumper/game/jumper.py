@@ -4,30 +4,30 @@ class Jumper:
     self.life = 0
     self.parachute = ["""
       ___  
-    /___\ 
-    \   / 
+     /___\ 
+     \   / 
       \ /  
-      0   
+       0   
       /|\  
       / \  
             
     ^^^^^^^
     """, """
         
-    /___\ 
-    \   / 
+     /___\ 
+     \   / 
       \ /  
-      0   
+       0   
       /|\  
       / \  
             
     ^^^^^^^
     ""","""
         
-    /__ 
-    \   / 
+    
+     \   / 
       \ /  
-      0   
+       0   
       /|\  
       / \  
             
@@ -35,16 +35,16 @@ class Jumper:
     ""","""
         
       
-    \   / 
+        
       \ /  
-      0   
+       0   
       /|\  
       / \  
             
     ^^^^^^^
     """, """
       
-      x   
+       x   
       /|\  
       / \  
             
@@ -57,6 +57,8 @@ class Jumper:
   def life_tracker (self, success):
     if success == False:
       self.life += 1
+
+    
 
 
 

@@ -21,6 +21,7 @@ class Director:
             self.get_outputs()
             self.get_inputs()
             self.get_updates()
+            
     
     def get_inputs(self):
         self.guess = self.console.write('Guess a letter [a-z]: ')
@@ -29,6 +30,19 @@ class Director:
     def get_updates(self):
         success = self.word.compare_letter(self.guess)
         self.jumper.life_tracker(success)
+        
+        if self.word.char_num():
+            print()
+            print('You are a winner!')
+            self.get_outputs()
+            self.keep_playing = False
+
+        if self.jumper.life == 4:
+            print()
+            print('Game Over!')
+            self.get_outputs()
+            self.keep_playing = False
+
 
 
     def get_outputs(self):

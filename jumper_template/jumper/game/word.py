@@ -13,8 +13,12 @@ class Word:
 
     def char_num(self):
         self.num = len(self.rand_word)
+        if not '_' in self.guessed:
+            return True
+        else:
+            return False
 
-        return self.num
+
 
     def compare_letter(self, guess):
         x = 0
@@ -25,4 +29,5 @@ class Word:
                 success = True
             x += 1
         return success
+    
 
