@@ -9,6 +9,7 @@ class Word:
         self.guessed = []
         for char in self.rand_word:
             self.guessed.append('_')
+        
 
     def char_num(self):
         self.num = len(self.rand_word)

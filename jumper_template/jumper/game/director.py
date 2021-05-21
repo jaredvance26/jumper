@@ -1,4 +1,4 @@
-from game.director import Director
+
 from game.console import Console
 from game.jumper import Jumper
 from game.word import Word
@@ -16,21 +16,22 @@ class Director:
         self.keep_playing = True
 
     def start_game(self):
+        self.word.get_word()
         while self.keep_playing:
+            self.get_outputs()
             self.get_inputs()
             self.get_updates()
-            self.get_outputs()
     
     def get_inputs(self):
-        self.word.get_word()
-        self.jumper.display()
+        self.guess = self.console.write('Guess a letter [a-z]: ')
+
 
     def get_updates(self):
-        guess = self.console.write_message('Guess a letter [a-z]: ')
-        success = self.word.compare_letter(guess)
-        self.jumper.life(success)
+        success = self.word.compare_letter(self.guess)
+        self.jumper.life_tracker(success)
 
 
     def get_outputs(self):
-        self.jumper.display()
+        self.console.show_word(self.word.guessed)
+        self.console.show_message(self.jumper.parachute[self.jumper.life])
 
