@@ -1,6 +1,10 @@
 import random
 
 class Word:
+    """
+    Selects word randomly and tracks the guesses. Calculates if you win or not.
+    Sterotype: Info Holder
+     """
     def __init__(self):
         self.words = ['light', 'apple', 'characterization', 'table']
 
