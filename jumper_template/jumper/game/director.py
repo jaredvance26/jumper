@@ -2,6 +2,8 @@
 from game.console import Console
 from game.jumper import Jumper
 from game.word import Word
+from colorama import Fore, Back, Style
+
 
 class Director:
     """ The purpose of this class is to direct and control the flow of the game.
@@ -33,13 +35,13 @@ class Director:
         
         if self.word.char_num():
             print()
-            print('You are a winner!')
+            print(f'{Fore.GREEN}You are a winner!')
             self.get_outputs()
             self.keep_playing = False
 
         if self.jumper.life == 4:
             print()
-            print('Game Over!')
+            print(f'{Fore.RED}Game Over!')
             self.get_outputs()
             self.keep_playing = False
 

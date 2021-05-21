@@ -1,4 +1,3 @@
-
 class Jumper:
   def __init__(self):
     self.life = 0
@@ -57,10 +56,3 @@ class Jumper:
   def life_tracker (self, success):
     if success == False:
       self.life += 1
-
-    
-
-
-
-
-
