@@ -9,7 +9,7 @@ class Director:
 
     """
     def __init__(self):
-        self.director = Director()
+
         self.console = Console()
         self.jumper = Jumper()
         self.word = Word()
@@ -22,7 +22,8 @@ class Director:
             self.get_outputs()
     
     def get_inputs(self):
-        pass
+        self.word.get_word()
+        self.jumper.display()
 
     def get_updates(self):
         guess = self.console.write_message('Guess a letter [a-z]: ')

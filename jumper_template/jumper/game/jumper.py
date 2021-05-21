@@ -53,3 +53,5 @@ class Jumper:
     
     def display(self):
         print(self.parachute[0])
+
+
