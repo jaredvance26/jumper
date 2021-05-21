@@ -31,8 +31,12 @@ root                    (project root folder)
 ## Required Technologies
 ---
 * Python 3.8.0
+pre-install: colorama
 
 ## Authors
 ---
 * TODO: Add your names and emails here
 Jared Vance, jaredkvance@gmail.com
+Brandon, den18017@byui.edu
+Alex Mudaliar, awsmudaliar@outlook.com
+Shandler, ShanRechenberger@gmail.com
