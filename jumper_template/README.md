@@ -37,6 +37,9 @@ pre-install: colorama
 ---
 * TODO: Add your names and emails here
 Jared Vance, jaredkvance@gmail.com
+
 Brandon, den18017@byui.edu
+
 Alex Mudaliar, awsmudaliar@outlook.com
+
 Shandler, ShanRechenberger@gmail.com
