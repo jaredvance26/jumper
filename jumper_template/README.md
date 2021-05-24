@@ -36,6 +36,7 @@ pre-install: colorama
 ## Authors
 ---
 * TODO: Add your names and emails here
+
 Jared Vance, jaredkvance@gmail.com
 
 Brandon, den18017@byui.edu
